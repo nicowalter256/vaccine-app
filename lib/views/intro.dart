@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../constants/colors.dart';
 import '../constants/images.dart';
+import 'auth/login.dart';
 
 class Intro extends StatefulWidget {
   const Intro({super.key});
@@ -36,7 +38,7 @@ class _IntroState extends State<Intro> {
               Container(
                 height: size.height,
                 width: size.width,
-                color: greyBG,
+                color: whiteBG,
               ),
               Positioned(
                 bottom: 10,
@@ -52,8 +54,7 @@ class _IntroState extends State<Intro> {
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           image: DecorationImage(
-                              fit: BoxFit.contain,
-                              image: AssetImage('assets/SPLASH 1.png')),
+                              fit: BoxFit.contain, image: AssetImage(intro1)),
                         ),
                         height: 0.4 * size.height,
                         width: size.width,
@@ -63,19 +64,20 @@ class _IntroState extends State<Intro> {
                       height: 40,
                     ),
                     Text(
-                      'Welcome to Feasts Farms',
+                      'Welcome to Know your vaccine',
                       style: GoogleFonts.mulish(
                         textStyle: const TextStyle(
-                            color: blackBG,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold),
+                          color: blackBG,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     Text(
-                      'Farm managemement made easy.',
+                      'Vaccines train your immune system to create antibodies',
                       style: GoogleFonts.mulish(
                         textStyle: const TextStyle(
                             color: blackBG,
@@ -148,7 +150,7 @@ class _IntroState extends State<Intro> {
               Container(
                 height: size.height,
                 width: size.width,
-                color: greyBG,
+                color: whiteBG,
               ),
               Positioned(
                 bottom: 10,
@@ -164,8 +166,7 @@ class _IntroState extends State<Intro> {
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           image: DecorationImage(
-                              fit: BoxFit.contain,
-                              image: AssetImage('assets/Splash 2.png')),
+                              fit: BoxFit.contain, image: AssetImage(intro2)),
                         ),
                         height: 0.4 * size.height,
                         width: size.width,
@@ -177,7 +178,7 @@ class _IntroState extends State<Intro> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Your farm is at a turning point. Your decision to continue with this onboarding process will have a lasting impact on your operations. Sign Up for Convinience, Being in control and receive return on your investment with full accountability',
+                        'Vaccines work by imitating an infection to engage the bodys natural defenses',
                         style: GoogleFonts.mulish(
                           textStyle: const TextStyle(
                               fontSize: 20, fontWeight: FontWeight.normal),
@@ -252,7 +253,7 @@ class _IntroState extends State<Intro> {
               Container(
                 height: size.height,
                 width: size.width,
-                color: greyBG,
+                color: whiteBG,
               ),
               Positioned(
                 bottom: 10,
@@ -268,7 +269,7 @@ class _IntroState extends State<Intro> {
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           image: DecorationImage(
-                              fit: BoxFit.contain, image: AssetImage(intro1)),
+                              fit: BoxFit.contain, image: AssetImage(intro3)),
                         ),
                         height: 0.4 * size.height,
                         width: size.width,
@@ -278,7 +279,7 @@ class _IntroState extends State<Intro> {
                       height: 10,
                     ),
                     Text(
-                      'Sign Up for convinience',
+                      'Sign Up today',
                       style: GoogleFonts.mulish(
                         textStyle: const TextStyle(
                             fontSize: 25,
@@ -290,7 +291,7 @@ class _IntroState extends State<Intro> {
                       height: 10,
                     ),
                     Text(
-                      'Be in control and receive return on investment with full accountability',
+                      'Vaccines help the body learn how to defend itself from disease without the dangers of a full-blown infection',
                       style: GoogleFonts.mulish(
                         textStyle: const TextStyle(
                             fontSize: 20,
@@ -301,7 +302,7 @@ class _IntroState extends State<Intro> {
                     ),
                     Container(
                       margin: const EdgeInsets.only(bottom: 40, top: 20),
-                      color: greyBG,
+                      color: whiteBG,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -335,7 +336,7 @@ class _IntroState extends State<Intro> {
                             width: 150,
                             child: TextButton(
                               onPressed: () {
-                                //Get.to(const LoginPage());
+                                Get.to(const LoginPage());
                               },
                               child: Text(
                                 'FINISH',
