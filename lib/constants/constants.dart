@@ -7,4 +7,6 @@ class Constants {
   static String placeDetailsAPI =
       "https://maps.googleapis.com/maps/api/place/details/json?";
   static String apiKey = 'AIzaSyBgSNgv8Vk-JLv4IlhQU62UZt9u6mknxm4';
+  static const String baseURL = 'https://cartugabane.com/api/';
+  static const int timeOut = 655000;
 }

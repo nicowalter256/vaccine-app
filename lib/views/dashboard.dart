@@ -9,6 +9,7 @@ import 'package:provider/provider.dart';
 import '../constants/colors.dart';
 import '../constants/static_data.dart';
 import '../controllers/user_controller.dart';
+import '../helpers/facilities_search.dart';
 import '../widgets/bottom_navigation.dart';
 import '../widgets/custom_container.dart';
 import '../widgets/vaccine_card.dart';
@@ -61,6 +62,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         itemBuilder: (BuildContext context, index) {
                           return GestureDetector(
                             onTap: () => {
+                              if (tabsList[index]['id'] == 2)
+                                {
+                                  showSearch(
+                                    context: context,
+                                    delegate: FacilitySearchDelegate(),
+                                  ),
+                                },
                               if (tabsList[index]['id'] == 3)
                                 {
                                   Get.to(const RouteSetUp()),
