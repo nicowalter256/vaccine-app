@@ -7,7 +7,6 @@ import '../../constants/colors.dart';
 import '../../constants/images.dart';
 import '../../controllers/user_controller.dart';
 import '../../widgets/custom_button.dart';
-import '../../widgets/custom_snackbar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -18,6 +17,10 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   UserController userController = UserController();
+  TextEditingController emailController =
+      TextEditingController(text: 'nico@gmail.com');
+  TextEditingController passwordController =
+      TextEditingController(text: '12345678');
 
   final formkey = GlobalKey<FormState>();
   bool obsecure = true;
@@ -80,6 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                               onSaved: (val) {
                                 user['email'] = val!.trim();
                               },
+                              controller: emailController,
                               validator: (val) {
                                 if (val!.isEmpty) {
                                   return 'Enter email or phone number';
@@ -128,6 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                               onSaved: (val) {
                                 user['password'] = val!.trim();
                               },
+                              controller: passwordController,
                               validator: (val) {
                                 if (val!.isEmpty) {
                                   return 'Password required';
@@ -220,7 +225,7 @@ class _LoginPageState extends State<LoginPage> {
                               Align(
                                 alignment: Alignment.center,
                                 child: Text(
-                                  "Dont have an account?",
+                                  "Dont have an account",
                                   style: GoogleFonts.mulish(
                                     textStyle: const TextStyle(color: blackBG),
                                   ),

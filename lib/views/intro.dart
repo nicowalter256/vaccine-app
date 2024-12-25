@@ -96,7 +96,7 @@ class _IntroState extends State<Intro> {
                               width: 150,
                               child: TextButton(
                                 onPressed: () => {
-                                  //Get.to(const LoginPage()),
+                                  Get.to(const LoginPage()),
                                 },
                                 child: Center(
                                   child: Text(

@@ -7,7 +7,7 @@ class CustomTextField extends StatelessWidget {
   final TextInputType? keyboardType;
   final String? labelText;
   final bool? obscureText;
-  final String? obscureCharacter;
+  //final String? obscureCharacter;
   final String? hintText;
   final bool isRequired;
   final Widget? prefixIcon;
@@ -22,7 +22,7 @@ class CustomTextField extends StatelessWidget {
     required this.controller,
     required this.keyboardType,
     this.obscureText = false,
-    this.obscureCharacter = '**',
+    // this.obscureCharacter = '**',
     required this.hintText,
     this.prefixIcon,
     this.suffixIcon,
@@ -54,7 +54,7 @@ class CustomTextField extends StatelessWidget {
             controller: controller,
             keyboardType: keyboardType,
             obscureText: obscureText!,
-            obscuringCharacter: obscureCharacter!,
+            // obscuringCharacter: obscureCharacter!,
             maxLines: maxLines,
             readOnly: isReadOnly,
             validator: (val) {

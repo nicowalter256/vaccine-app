@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../views/dashboard.dart';
 import '../widgets/custom_snackbar.dart';
 
 class UserController extends ChangeNotifier {
@@ -12,9 +14,10 @@ class UserController extends ChangeNotifier {
     }
 
     try {
-      Future.delayed(const Duration(seconds: 3)).then((val) {
-        CustomSnackBar.error("Login error");
-      });
+      Get.to(const DashboardScreen());
+      // Future.delayed(const Duration(seconds: 3)).then((val) {
+      //   CustomSnackBar.error("Login error");
+      // });
     } catch (err) {}
     loading = false;
     notifyListeners();
