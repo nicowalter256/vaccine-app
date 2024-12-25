@@ -12,6 +12,7 @@ import '../controllers/user_controller.dart';
 import '../widgets/bottom_navigation.dart';
 import '../widgets/custom_container.dart';
 import '../widgets/vaccine_card.dart';
+import 'route_set_up.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -60,8 +61,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         itemBuilder: (BuildContext context, index) {
                           return GestureDetector(
                             onTap: () => {
-                              //Get.to(const TransactionHistory()),
-                              if (tabsList[index]['id'] == 3) {}
+                              if (tabsList[index]['id'] == 3)
+                                {
+                                  Get.to(const RouteSetUp()),
+                                }
                             },
                             child: CustomContainer(
                               bgColor: tabsList[index]['color'],

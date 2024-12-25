@@ -66,7 +66,7 @@ class VaccineCard extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           Text(
-            "Facilities: 7,000",
+            "Facilities: 7,525",
             style: GoogleFonts.mulish(
               textStyle: const TextStyle(
                   fontSize: 30, color: whiteBG, fontWeight: FontWeight.bold),

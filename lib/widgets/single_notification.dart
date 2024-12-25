@@ -42,7 +42,9 @@ class SingleNotification extends StatelessWidget {
                       notifications[index]["name"],
                       style: GoogleFonts.mulish(
                         textStyle: const TextStyle(
-                            color: blackBG, fontWeight: FontWeight.normal),
+                            fontSize: 13,
+                            color: blackBG,
+                            fontWeight: FontWeight.normal),
                       ),
                     ),
                   ],

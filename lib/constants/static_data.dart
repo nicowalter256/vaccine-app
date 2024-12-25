@@ -7,13 +7,13 @@ List<Map<String, dynamic>> notifications = [
   {
     "id": 3,
     "name":
-        "Your Nzuri wallet has been credited \nwith shs 40,000 payable before\n4th July 2024",
+        "Yes, new COVID-19 vaccines are\n available for the 2024–2025 season.\n ",
     "color": greenBG,
   },
   {
     "id": 3,
     "name":
-        "Your Nzuri wallet has been credited\nwith shs 40,000 payable before\n5th July 2024",
+        "Uganda strengthens immunization prog\nram with new cold chain equipment",
     "color": blackBG,
   },
 ];
@@ -26,8 +26,8 @@ List<Map<String, dynamic>> tabsList = [
   },
   {
     "id": 2,
-    "name": "Account",
-    "iconData": Icons.person,
+    "name": "Explore",
+    "iconData": Icons.explore,
     "color": blueBG,
   },
   {

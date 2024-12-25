@@ -29,12 +29,10 @@ class CustomContainer extends StatelessWidget {
             ),
           ),
           child: iconData != null
-              ? IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    iconData,
-                    color: whiteBG,
-                  ))
+              ? Icon(
+                  iconData,
+                  color: whiteBG,
+                )
               : Image.asset('$icon'),
         ),
         const SizedBox(height: 7),
